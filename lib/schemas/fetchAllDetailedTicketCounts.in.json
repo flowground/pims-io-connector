@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "event_id": {
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+        },
+        "from_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "to_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "show_ignored": {
+            "type": "boolean",
+            "default": false
+        },
+        "show_not_approved": {
+            "type": "boolean",
+            "default": false
+        },
+        "sort": {
+            "type": "string",
+            "enum": [
+                "date",
+                "-date"
+            ],
+            "default": "date"
+        },
+        "page_size": {
+            "type": "integer",
+            "format": "int32",
+            "default": 25
+        }
+    }
+}

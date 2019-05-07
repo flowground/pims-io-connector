@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "event_id": {
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+        },
+        "show_ignored": {
+            "type": "boolean",
+            "default": false
+        },
+        "sort": {
+            "type": "string",
+            "enum": [
+                "date",
+                "-date"
+            ],
+            "default": "date"
+        },
+        "page_size": {
+            "type": "integer",
+            "format": "int32",
+            "default": 25
+        }
+    }
+}

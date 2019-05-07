@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "label": {
+            "type": "string"
+        },
+        "from_datetime": {
+            "type": "string",
+            "format": "date"
+        },
+        "to_datetime": {
+            "type": "string",
+            "format": "date"
+        },
+        "city": {
+            "type": "string"
+        },
+        "sort": {
+            "type": "string",
+            "enum": [
+                "label",
+                "-label",
+                "datetime",
+                "-datetime",
+                "venue_label",
+                "-venue_label",
+                "city",
+                "-city"
+            ],
+            "default": "label"
+        },
+        "page_size": {
+            "type": "integer",
+            "format": "int32",
+            "default": 25
+        },
+        "Accept_Language": {
+            "type": "string",
+            "enum": [
+                "de",
+                "en",
+                "fr"
+            ],
+            "default": "en"
+        }
+    }
+}

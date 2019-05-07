@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "label": {
+            "type": "string"
+        },
+        "from_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "to_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "TOU",
+                "LGS"
+            ]
+        },
+        "sort": {
+            "type": "string",
+            "enum": [
+                "label",
+                "-label",
+                "first_date",
+                "-first_date",
+                "last_date",
+                "-last_date"
+            ],
+            "default": "first_date"
+        },
+        "page_size": {
+            "type": "integer",
+            "format": "int32",
+            "default": 25
+        },
+        "Accept_Language": {
+            "type": "string",
+            "enum": [
+                "de",
+                "en",
+                "fr"
+            ],
+            "default": "en"
+        }
+    }
+}

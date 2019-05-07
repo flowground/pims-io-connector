@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "channel_id": {
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+        },
+        "Accept_Language": {
+            "type": "string",
+            "enum": [
+                "de",
+                "en",
+                "fr"
+            ],
+            "default": "en"
+        }
+    }
+}
